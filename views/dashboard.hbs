@@ -1,0 +1,53 @@
+<h1 class="mb-4">Mi Tablero</h1>
+
+<section class="mb-4">
+    <form action="/nueva-tarjeta" method="POST" class="row g-2 align-items-end">
+        <div class="col-md-9">
+            <label class="form-label">Nueva Tarea</label>
+            <input type="text" name="title" class="form-control" placeholder="¿Qué hay que hacer?" required>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-primary w-100">Añadir</button>
+        </div>
+    </form>
+</section>
+
+<div class="kanban-board">
+
+    <div class="kanban-column">
+        <h5>To Do</h5>
+        {{#each tasks}}
+            {{#if (eq this.status "To Do")}}
+                <div class="task-card">
+                    <span class="task-id">#{{this.id}}</span>
+                    <strong>{{this.title}}</strong>
+                </div>
+            {{/if}}
+        {{/each}}
+    </div>
+
+    <div class="kanban-column">
+        <h5>In Progress</h5>
+        {{#each tasks}}
+            {{#if (eq this.status "In Progress")}}
+                <div class="task-card">
+                    <span class="task-id">#{{this.id}}</span>
+                    <strong>{{this.title}}</strong>
+                </div>
+            {{/if}}
+        {{/each}}
+    </div>
+
+    <div class="kanban-column">
+        <h5>Done</h5>
+        {{#each tasks}}
+            {{#if (eq this.status "Done")}}
+                <div class="task-card">
+                    <span class="task-id">#{{this.id}}</span>
+                    <strong>{{this.title}}</strong>
+                </div>
+            {{/if}}
+        {{/each}}
+    </div>
+
+</div>

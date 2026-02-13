@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Configurar el proyecto",
+      "status": "To Do"
+    },
+    {
+      "id": 2,
+      "title": "Diseñar el Layout",
+      "status": "In Progress"
+    },
+    {
+      "id": 1770787055843,
+      "title": "Diseñar Home",
+      "status": "To Do"
+    },
+    {
+      "id": 1770788397234,
+      "title": "Completar info de footer",
+      "status": "In Progress"
+    },
+    {
+      "id": 1770955310086,
+      "title": "Requerimientos del Cliente",
+      "status": "To Do"
+    },
+    {
+      "id": 1770955593966,
+      "title": "Diseño Formulario Contacto",
+      "status": "Done"
+    },
+    {
+      "id": 1770992835371,
+      "title": "Requerimientos técnicos básicos",
+      "status": "To Do"
+    }
+  ]
+}
