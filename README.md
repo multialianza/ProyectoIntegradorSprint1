@@ -182,13 +182,14 @@ Saludos, David
 
 - Para entender la estructura del sitio y cómo acceder a la aplicación.
 
-Criterios de Aceptación:
+**Criterios de Aceptación:**
 
 ✅ Debe existir una ruta GET / que renderice una vista home.hbs.
 
 ✅ Deben existir las rutas GET /register y GET /login que rendericen sus vistas correspondientes.
 
-✅ Todas las vistas deben heredar de un layout.hbs principal para mantener un diseño consistente.
+✅  Todas las vistas deben heredar de un layout.hbs principal para mantener un diseño consistente.
+
 ---
 **HU-02: Visualización de Datos Persistentes en el Dashboard**
 - Como un usuario (simulado),
@@ -252,6 +253,6 @@ Estructura de Carpetas: El proyecto debe tener una estructura organizada (views/
 
 ---
 **Entregable**
-Un repositorio público en GitHub con el proyecto funcional.
+- Un repositorio público en GitHub con el proyecto funcional.
 
-La aplicación debe renderizar datos desde data.json y permitir la adición de nuevas tareas que persisten después de reiniciar el servidor.
+- La aplicación debe renderizar datos desde data.json y permitir la adición de nuevas tareas que persisten después de reiniciar el servidor.
