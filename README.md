@@ -8,16 +8,6 @@
 ![Handlebars](https://img.shields.io/badge/Handlebars-Views-orange)
 
 ---
-
-# 🚀 KanbanPro – Sprint 1
-
-![Estado](https://img.shields.io/badge/Estado-Prototipo%20Funcional-blue)
-![Node](https://img.shields.io/badge/Node.js-Backend-green)
-![Express](https://img.shields.io/badge/Express-Framework-lightgrey)
-![Handlebars](https://img.shields.io/badge/Handlebars-Views-orange)
-
----
-
 ## 🎥 Vista previa
 
 <img width="1723" height="825" alt="kanbanpro0" src="https://github.com/user-attachments/assets/931a65f4-e01c-4919-a5ec-ed7290171016" />
@@ -42,7 +32,7 @@ Este sistema permite visualizar tareas y agregar nuevas tarjetas, las cuales se 
 ## 🌐 Demo
 
 🔗 **Demo en vivo:**
-http://localhost:3000
+https://proyecto-integrador-sprint1.vercel.app/
 
 
 ---
@@ -97,7 +87,7 @@ Cliente → Express → Lectura JSON → Renderizado → Respuesta HTML
 
 ### 1️⃣ Clonar el repositorio
 
-git clone https://github.com/TU-USUARIO/kanbanpro.git
+git clone https://github.com/tu-usuario/kanbanpro.git
 cd kanbanpro
 
 ---
@@ -131,9 +121,6 @@ Cada vez que se crea una nueva tarjeta:
 1. Se lee el archivo
 2. Se modifica el contenido
 3. Se guarda nuevamente
-
-👉 Esto asegura persistencia incluso al reiniciar el servidor.
-
 ---
 
 ## 📁 Estructura del proyecto
@@ -178,18 +165,15 @@ MIT
 
 ## 👨‍💻 Autor
 
-Desarrollado por **Tu Nombre**
+Desarrollado por **Multialianza**
 Proyecto académico – Sprint 1 KanbanPro
 
+---
 
-
-
-
-
-
-💼 EF- M6 Proyecto integrador Sprint 1
-Proyecto: "KanbanPro" - Kick-off del Sprint 1
-Asunto: 📧 ¡Luz verde para el prototipo funcional de KanbanPro!
+### 💼 Caso
+### EF- M6 Proyecto integrador Sprint 1
+**Proyecto: "KanbanPro" - Kick-off del Sprint 1**
+**Asunto: 📧 ¡Luz verde para el prototipo funcional de KanbanPro!**
 
 De: David, Product Manager de KanbanPro Para: El Equipo de Desarrollo (Tú)
 
@@ -203,16 +187,16 @@ El objetivo de este primer sprint es crear una aplicación navegable que no solo
 
 Saludos, David
 
-Resumen del Sprint 1: Prototipo Funcional con Persistencia en Archivos
-Objetivo del Sprint: Construir la aplicación web inicial renderizada desde el servidor, incluyendo la interfaz de usuario, la navegación y un mecanismo de persistencia de datos local utilizando el sistema de archivos de Node.js y un archivo JSON.
+**Resumen del Sprint 1:** Prototipo Funcional con Persistencia en Archivos
+**Objetivo del Sprint:** Construir la aplicación web inicial renderizada desde el servidor, incluyendo la interfaz de usuario, la navegación y un mecanismo de persistencia de datos local utilizando el sistema de archivos de Node.js y un archivo JSON.
 
-Historias de Usuario a Implementar
-HU-01: Navegación y Estructura Visual
-Como un visitante,
+**Historias de Usuario a Implementar**
+**HU-01: Navegación y Estructura Visual**
+- Como un visitante,
 
-Quiero poder navegar a las páginas de Inicio, Registro e Inicio de Sesión,
+- Quiero poder navegar a las páginas de Inicio, Registro e Inicio de Sesión,
 
-Para entender la estructura del sitio y cómo acceder a la aplicación.
+- Para entender la estructura del sitio y cómo acceder a la aplicación.
 
 Criterios de Aceptación:
 
@@ -222,14 +206,14 @@ Criterios de Aceptación:
 
 ✅ Todas las vistas deben heredar de un layout.hbs principal para mantener un diseño consistente.
 
-HU-02: Visualización de Datos Persistentes en el Dashboard
-Como un usuario (simulado),
+**HU-02: Visualización de Datos Persistentes en el Dashboard**
+- Como un usuario (simulado),
 
-Quiero que el dashboard cargue y muestre los datos del proyecto desde una fuente de datos permanente,
+- Quiero que el dashboard cargue y muestre los datos del proyecto desde una fuente de datos permanente,
 
-Para que la información sea consistente cada vez que visito la página.
+- Para que la información sea consistente cada vez que visito la página.
 
-Criterios de Aceptación:
+**Criterios de Aceptación:**
 
 ✅ Debe existir un archivo data.json en el proyecto que contenga la estructura inicial de los tableros, listas y tarjetas.
 
@@ -239,14 +223,14 @@ Criterios de Aceptación:
 
 ✅ Este objeto debe pasarse a la vista dashboard.hbs, la cual usará {{#each}} para renderizar dinámicamente el contenido.
 
-HU-03: Creación y Persistencia de Nuevas Tareas
-Como un usuario (simulado),
+**HU-03: Creación y Persistencia de Nuevas Tareas**
+- Como un usuario (simulado),
 
-Quiero poder añadir una nueva tarjeta a una lista a través de un formulario,
+- Quiero poder añadir una nueva tarjeta a una lista a través de un formulario,
 
-Para que mi nueva tarea quede guardada y sea visible si recargo la página.
+- Para que mi nueva tarea quede guardada y sea visible si recargo la página.
 
-Criterios de Aceptación:
+**Criterios de Aceptación:**
 
 ✅ La vista dashboard.hbs debe incluir un formulario HTML (<form method="POST">) para añadir una nueva tarjeta.
 
@@ -254,32 +238,32 @@ Criterios de Aceptación:
 
 ✅ La lógica de esta ruta POST debe seguir el ciclo "Leer-Modificar-Escribir":
 
-Leer y parsear el contenido actual de data.json.
+- Leer y parsear el contenido actual de data.json.
 
-Modificar el objeto de datos, añadiendo la nueva tarjeta.
+- Modificar el objeto de datos, añadiendo la nueva tarjeta.
 
-Convertir el objeto modificado de vuelta a un string JSON (JSON.stringify).
+- Convertir el objeto modificado de vuelta a un string JSON (JSON.stringify).
 
-Escribir el nuevo string sobreescribiendo el archivo data.json (fs.writeFileSync).
+- Escribir el nuevo string sobreescribiendo el archivo data.json (fs.writeFileSync).
 
 ✅ Tras guardar, la ruta debe redirigir (res.redirect) al usuario de vuelta al /dashboard.
 
-Requisitos Técnicos y Estructura
+**Requisitos Técnicos y Estructura**
 Entorno: Inicializa un proyecto de Node.js e instala express y hbs.
 
 Estructura de Carpetas: El proyecto debe tener una estructura organizada (views/, public/, app.js, data.json).
 
-Conceptos a Aplicar:
+**Conceptos a Aplicar:**
 
-Node.js y Express: Servidor, ruteo (GET, POST), middleware (express.urlencoded).
+- Node.js y Express: Servidor, ruteo (GET, POST), middleware (express.urlencoded).
 
-Handlebars (hbs): Motor de vistas, layouts y helpers ({{#each}}).
+- Handlebars (hbs): Motor de vistas, layouts y helpers ({{#each}}).
 
-Módulo fs (File System): fs.readFileSync y fs.writeFileSync.
+- Módulo fs (File System): fs.readFileSync y fs.writeFileSync.
 
-JSON: JSON.parse y JSON.stringify.
+- JSON: JSON.parse y JSON.stringify.
 
-Entregable
+**Entregable**
 Un repositorio público en GitHub con el proyecto funcional.
 
 La aplicación debe renderizar datos desde data.json y permitir la adición de nuevas tareas que persisten después de reiniciar el servidor.
