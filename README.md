@@ -1,4 +1,106 @@
-# ProyectoIntegradorSprint1
+
+
+# 🚀 KanbanPro – Sprint 1
+
+![Estado](https://img.shields.io/badge/Estado-Prototipo%20Funcional-blue)
+![Node](https://img.shields.io/badge/Node.js-Backend-green)
+![Express](https://img.shields.io/badge/Express-Framework-lightgrey)
+![Handlebars](https://img.shields.io/badge/Handlebars-Views-orange)
+
+---
+
+## 🎥 Vista previa
+
+![Demo KanbanPro](./public/img/demo.png)
+
+> 💡 Puedes reemplazar esto por un GIF usando herramientas como ScreenToGif o LICEcap
+
+---
+
+## 📌 Descripción
+
+**KanbanPro** es un prototipo funcional de una aplicación web tipo tablero Kanban, desarrollado como parte del Sprint 1 de un proyecto integrador.
+
+El objetivo principal es validar:
+
+- La navegación entre vistas
+- Renderizado dinámico desde el servidor
+- Persistencia de datos utilizando archivos JSON
+
+Este sistema permite visualizar tareas y agregar nuevas tarjetas, las cuales se almacenan localmente en el servidor, simulando una base de datos.
+
+---
+
+## 🌐 Demo
+
+🔗 **Demo local:**  
+http://localhost:3000
+
+👤 **Usuario demo:**  
+No requiere autenticación (modo simulación)
+
+🎬 **Video (opcional):**  
+Agrega aquí un enlace si subes demo a YouTube
+
+---
+
+## 🧰 Stack Tecnológico
+
+### ⚙️ Backend
+- Node.js
+- Express
+
+### 🎨 Frontend
+- Handlebars (hbs)
+- HTML5
+- CSS3
+
+### 💾 Persistencia
+- JSON (archivo local)
+- Módulo `fs` de Node.js
+
+---
+
+## 🏗️ Arquitectura
+
+- Patrón: Renderizado del lado del servidor (SSR)
+- Estructura:
+  - Rutas → Controlan navegación y lógica
+  - Vistas → Renderizadas con Handlebars
+  - JSON → Fuente de datos persistente
+
+📊 Flujo:
+Cliente → Express → Lectura JSON → Renderizado → Respuesta HTML
+
+---
+
+## 🔗 Endpoints
+
+| Método | Ruta              | Descripción |
+|------|------------------|------------|
+| GET  | `/`              | Página de inicio |
+| GET  | `/login`         | Vista login |
+| GET  | `/register`      | Vista registro |
+| GET  | `/dashboard`     | Visualiza tareas |
+| POST | `/nueva-tarjeta` | Crea nueva tarea |
+
+---
+
+## ⚙️ Instalación y Uso
+
+### 1️⃣ Clonar el repositorio
+
+```bash
+git clone https://github.com/TU-USUARIO/kanbanpro.git
+cd kanbanpro
+
+
+
+
+
+
+
+
 💼 EF- M6 Proyecto integrador Sprint 1
 Proyecto: "KanbanPro" - Kick-off del Sprint 1
 Asunto: 📧 ¡Luz verde para el prototipo funcional de KanbanPro!
