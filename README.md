@@ -87,8 +87,8 @@ Cliente → Express → Lectura JSON → Renderizado → Respuesta HTML
 
 ### 1️⃣ Clonar el repositorio
 
-git clone https://github.com/tu-usuario/kanbanpro.git
-cd kanbanpro
+- git clone https://github.com/tu-usuario/kanbanpro.git
+- cd kanbanpro
 
 ---
 
@@ -125,23 +125,7 @@ Cada vez que se crea una nueva tarjeta:
 
 ## 📁 Estructura del proyecto
 
-kanbanpro/
-│
-├── app.js
-├── data.json
-├── package.json
-│
-├── views/
-│   ├── layouts/
-│   │   └── main.hbs
-│   ├── home.hbs
-│   ├── login.hbs
-│   ├── register.hbs
-│   └── dashboard.hbs
-│
-├── public/
-│   └── css/
-│       └── styles.css
+<img width="358" height="447" alt="kanbanpro8" src="https://github.com/user-attachments/assets/ecd8f975-240c-4827-b200-1b57866a8cd4" />
 
 ---
 
@@ -165,8 +149,8 @@ MIT
 
 ## 👨‍💻 Autor
 
-Desarrollado por **Multialianza**
-Proyecto académico – Sprint 1 KanbanPro
+- Desarrollado por **Multialianza**
+- Proyecto académico – Sprint 1 KanbanPro
 
 ---
 
