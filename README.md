@@ -9,11 +9,19 @@
 
 ---
 
+# 🚀 KanbanPro – Sprint 1
+
+![Estado](https://img.shields.io/badge/Estado-Prototipo%20Funcional-blue)
+![Node](https://img.shields.io/badge/Node.js-Backend-green)
+![Express](https://img.shields.io/badge/Express-Framework-lightgrey)
+![Handlebars](https://img.shields.io/badge/Handlebars-Views-orange)
+
+---
+
 ## 🎥 Vista previa
 
-![Demo KanbanPro](./public/img/demo.png)
+<img width="1723" height="825" alt="kanbanpro0" src="https://github.com/user-attachments/assets/931a65f4-e01c-4919-a5ec-ed7290171016" />
 
-> 💡 Puedes reemplazar esto por un GIF usando herramientas como ScreenToGif o LICEcap
 
 ---
 
@@ -21,11 +29,11 @@
 
 **KanbanPro** es un prototipo funcional de una aplicación web tipo tablero Kanban, desarrollado como parte del Sprint 1 de un proyecto integrador.
 
-El objetivo principal es validar:
+**El objetivo principal es validar:**
 
-- La navegación entre vistas
-- Renderizado dinámico desde el servidor
-- Persistencia de datos utilizando archivos JSON
+* La navegación entre vistas
+* Renderizado dinámico desde el servidor
+* Persistencia de datos utilizando archivos JSON
 
 Este sistema permite visualizar tareas y agregar nuevas tarjetas, las cuales se almacenan localmente en el servidor, simulando una base de datos.
 
@@ -33,41 +41,40 @@ Este sistema permite visualizar tareas y agregar nuevas tarjetas, las cuales se 
 
 ## 🌐 Demo
 
-🔗 **Demo local:**  
+🔗 **Demo en vivo:**
 http://localhost:3000
 
-👤 **Usuario demo:**  
-No requiere autenticación (modo simulación)
-
-🎬 **Video (opcional):**  
-Agrega aquí un enlace si subes demo a YouTube
 
 ---
 
 ## 🧰 Stack Tecnológico
 
 ### ⚙️ Backend
-- Node.js
-- Express
+
+* Node.js
+* Express
 
 ### 🎨 Frontend
-- Handlebars (hbs)
-- HTML5
-- CSS3
+
+* Handlebars (hbs)
+* HTML5
+* CSS3
 
 ### 💾 Persistencia
-- JSON (archivo local)
-- Módulo `fs` de Node.js
+
+* JSON (archivo local)
+* Módulo `fs` de Node.js
 
 ---
 
 ## 🏗️ Arquitectura
 
-- Patrón: Renderizado del lado del servidor (SSR)
-- Estructura:
-  - Rutas → Controlan navegación y lógica
-  - Vistas → Renderizadas con Handlebars
-  - JSON → Fuente de datos persistente
+* Patrón: Renderizado del lado del servidor (SSR)
+* Estructura:
+
+  * Rutas → Controlan navegación y lógica
+  * Vistas → Renderizadas con Handlebars
+  * JSON → Fuente de datos persistente
 
 📊 Flujo:
 Cliente → Express → Lectura JSON → Renderizado → Respuesta HTML
@@ -76,13 +83,13 @@ Cliente → Express → Lectura JSON → Renderizado → Respuesta HTML
 
 ## 🔗 Endpoints
 
-| Método | Ruta              | Descripción |
-|------|------------------|------------|
-| GET  | `/`              | Página de inicio |
-| GET  | `/login`         | Vista login |
-| GET  | `/register`      | Vista registro |
-| GET  | `/dashboard`     | Visualiza tareas |
-| POST | `/nueva-tarjeta` | Crea nueva tarea |
+| Método | Ruta             | Descripción      |
+| ------ | ---------------- | ---------------- |
+| GET    | `/`              | Página de inicio |
+| GET    | `/login`         | Vista login      |
+| GET    | `/register`      | Vista registro   |
+| GET    | `/dashboard`     | Visualiza tareas |
+| POST   | `/nueva-tarjeta` | Crea nueva tarea |
 
 ---
 
@@ -90,25 +97,30 @@ Cliente → Express → Lectura JSON → Renderizado → Respuesta HTML
 
 ### 1️⃣ Clonar el repositorio
 
-```
 git clone https://github.com/TU-USUARIO/kanbanpro.git
 cd kanbanpro
 
 ---
+
 ### 2️⃣ Instalar dependencias
+
 npm install
 
 ---
+
 ### 3️⃣ Ejecutar el servidor
+
 node app.js
 
 ---
+
 ### 4️⃣ Abrir en navegador
+
 http://localhost:3000
+
 ---
 
-
-### 🧪 Persistencia de datos
+## 🧪 Persistencia de datos
 
 Las tareas se almacenan en el archivo:
 
@@ -116,9 +128,58 @@ data.json
 
 Cada vez que se crea una nueva tarjeta:
 
-- Se lee el archivo
-- Se modifica el contenido
-- Se guarda nuevamente
+1. Se lee el archivo
+2. Se modifica el contenido
+3. Se guarda nuevamente
+
+👉 Esto asegura persistencia incluso al reiniciar el servidor.
+
+---
+
+## 📁 Estructura del proyecto
+
+kanbanpro/
+│
+├── app.js
+├── data.json
+├── package.json
+│
+├── views/
+│   ├── layouts/
+│   │   └── main.hbs
+│   ├── home.hbs
+│   ├── login.hbs
+│   ├── register.hbs
+│   └── dashboard.hbs
+│
+├── public/
+│   └── css/
+│       └── styles.css
+
+---
+
+## 🚀 Despliegue
+
+Este proyecto está preparado para ejecutarse localmente.
+
+Opciones futuras:
+
+* Render
+* Railway
+* Vercel (solo frontend)
+
+---
+
+## 📄 Licencia
+
+MIT
+
+---
+
+## 👨‍💻 Autor
+
+Desarrollado por **Tu Nombre**
+Proyecto académico – Sprint 1 KanbanPro
 
 
 
