@@ -149,7 +149,7 @@ MIT
 
 ## 👨‍💻 Autor
 
-- Desarrollado por **Multialianza**
+- Desarrollado por:  **Multialianza**
 - Proyecto académico – Sprint 1 KanbanPro
 
 ---
@@ -171,9 +171,9 @@ El objetivo de este primer sprint es crear una aplicación navegable que no solo
 
 Saludos, David
 
-**Resumen del Sprint 1:** Prototipo Funcional con Persistencia en Archivos
-**Objetivo del Sprint:** Construir la aplicación web inicial renderizada desde el servidor, incluyendo la interfaz de usuario, la navegación y un mecanismo de persistencia de datos local utilizando el sistema de archivos de Node.js y un archivo JSON.
-
+- **Resumen del Sprint 1:** Prototipo Funcional con Persistencia en Archivos
+- **Objetivo del Sprint:** Construir la aplicación web inicial renderizada desde el servidor, incluyendo la interfaz de usuario, la navegación y un mecanismo de persistencia de datos local utilizando el sistema de archivos de Node.js y un archivo JSON.
+---
 **Historias de Usuario a Implementar**
 **HU-01: Navegación y Estructura Visual**
 - Como un visitante,
@@ -189,7 +189,7 @@ Criterios de Aceptación:
 ✅ Deben existir las rutas GET /register y GET /login que rendericen sus vistas correspondientes.
 
 ✅ Todas las vistas deben heredar de un layout.hbs principal para mantener un diseño consistente.
-
+---
 **HU-02: Visualización de Datos Persistentes en el Dashboard**
 - Como un usuario (simulado),
 
@@ -207,6 +207,7 @@ Criterios de Aceptación:
 
 ✅ Este objeto debe pasarse a la vista dashboard.hbs, la cual usará {{#each}} para renderizar dinámicamente el contenido.
 
+---
 **HU-03: Creación y Persistencia de Nuevas Tareas**
 - Como un usuario (simulado),
 
@@ -232,11 +233,13 @@ Criterios de Aceptación:
 
 ✅ Tras guardar, la ruta debe redirigir (res.redirect) al usuario de vuelta al /dashboard.
 
+---
 **Requisitos Técnicos y Estructura**
 Entorno: Inicializa un proyecto de Node.js e instala express y hbs.
 
 Estructura de Carpetas: El proyecto debe tener una estructura organizada (views/, public/, app.js, data.json).
 
+---
 **Conceptos a Aplicar:**
 
 - Node.js y Express: Servidor, ruteo (GET, POST), middleware (express.urlencoded).
@@ -247,6 +250,7 @@ Estructura de Carpetas: El proyecto debe tener una estructura organizada (views/
 
 - JSON: JSON.parse y JSON.stringify.
 
+---
 **Entregable**
 Un repositorio público en GitHub con el proyecto funcional.
 
